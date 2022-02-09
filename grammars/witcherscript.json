@@ -40,6 +40,10 @@
 			"match": "\\b(\\d+|\\d+.?(f)?)\\b"
 		},
 		{
+			"name": "constant.rgb-value.ws",
+			"match": "(#)([0-9a-fA-F]{3}|[0-9a-fA-F]{6})\\b(?!.*?(?<!@){)"
+		},
+		{
 			"name": "constant.language.ws",
 			"match": "\\b(false|NULL|true)\\b"
 		},
