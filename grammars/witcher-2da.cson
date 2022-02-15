@@ -1,12 +1,12 @@
-scopeName: 'source.witcher-2da'
-name: 'Witcher 2D Array'
+scopeName: 'source.2da'
+name: '2D Array'
 fileTypes: [
   '2da'
 ]
 patterns: [
   {
-    match: '(^2DA)( V...)'
-    name: 'constant.language.witcher-2da'
+    match: '(^2DA)(\\s+V...)'
+    name: 'constant.language.2da'
   }
   {
     match: '^\\s(.+)'
@@ -16,8 +16,8 @@ patterns: [
     match: '(^\\d)(.+)'
     captures:
       0:
-        name: 'constant.numeric.witcher-2da'
+        name: 'constant.numeric.2da'
       1:
-        name: 'keyword.other.witcher-2da'
+        name: 'keyword.other.2da'
   }
 ]
