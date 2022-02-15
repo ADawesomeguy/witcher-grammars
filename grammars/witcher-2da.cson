@@ -1,0 +1,23 @@
+scopeName: 'source.witcher-2da'
+name: 'Witcher 2D Array'
+fileTypes: [
+  '2da'
+]
+patterns: [
+  {
+    match: '(^2DA)( V...)'
+    name: 'constant.language.witcher-2da'
+  }
+  {
+    match: '^\\s(.+)'
+    name: 'entity.name'
+  }
+  {
+    match: '(^\\d)(.+)'
+    captures:
+      0:
+        name: 'constant.numeric.witcher-2da'
+      1:
+        name: 'keyword.other.witcher-2da'
+  }
+]
